@@ -11,6 +11,6 @@ How to install:
 How to compile:
 ------------------------
 0. A Visual Studio 2010 have been used to make this stuff.
-1. Fix **<AMXX_Studio_Dir>** in **Custom.props**.
+1. Fix **`<AMXX_Studio_Dir>`** in **Custom.props**.
 2. Compile as usual.
 
