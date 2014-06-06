@@ -14,3 +14,7 @@ How to compile:
 1. Fix **`<AMXX_Studio_Dir>`** in **Custom.props**.
 2. Compile as usual.
 
+Todo:
+------------------------
+1. Make this stuff not to convert text in comments.
+2. Fix some problems.
