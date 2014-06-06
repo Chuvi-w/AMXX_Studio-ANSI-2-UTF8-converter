@@ -88,7 +88,7 @@ void UTF82ANSI()
 
 void About()
 {
-	char AboutStr[1000];
+	char AboutStr[400];
 	sprintf_s(AboutStr,"AMXX_Studio char converter\n\nAuthor:Chuvi\nBuildNumber:%s\nSource:%s\nDiscussion at %s",BuildNumber(),SourceLink,ForumLink);
 	int len=strlen(AboutStr);
 	strcat(AboutStr,"\n\nCopy this info to code?");
