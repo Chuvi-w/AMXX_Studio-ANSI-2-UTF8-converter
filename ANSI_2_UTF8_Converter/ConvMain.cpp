@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "UniConversion.h"
 #define SourceLink "https://github.com/Chuvi-w/AMXX_Studio-ANSI-2-UTF8-converter"
-#define ForumLink  "https://github.com/Chuvi-w/AMXX_Studio-ANSI-2-UTF8-converter"
+#define ForumLink  "http://amx-x.ru/viewtopic.php?f=6&t=16353"
 
 extern const char *BuildNumber();
 
@@ -89,7 +89,7 @@ void UTF82ANSI()
 void About()
 {
 	char AboutStr[1000];
-	sprintf_s(AboutStr,"AMXX_Studio char converter\n\nAuthor:Chuvi\nBuildNumber:%s\nSource code avaiable at:%s\nDiscussion at %s",BuildNumber(),SourceLink,ForumLink);
+	sprintf_s(AboutStr,"AMXX_Studio char converter\n\nAuthor:Chuvi\nBuildNumber:%s\nSource:%s\nDiscussion at %s",BuildNumber(),SourceLink,ForumLink);
 	int len=strlen(AboutStr);
 	strcat(AboutStr,"\n\nCopy this info to code?");
 
@@ -99,7 +99,7 @@ void About()
 		char *text=(char*)SendStudioMsg(SCM_EDITOR_GETTEXT,"",-1);
 		int tlen=strlen(text)+strlen(AboutStr)+10;
 		char *outtext=new char[tlen];
-		sprintf_s(outtext,tlen-1,"/*\n%s\n*/\n%s",AboutStr,text);
+		sprintf_s(outtext,tlen-1,"/*\n%s*/\n%s",AboutStr,text);
 		SendStudioMsg(SCM_EDITOR_SETTEXT,outtext,-1);
 		delete [] outtext;
 
